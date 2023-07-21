@@ -11,9 +11,9 @@ import org.openftc.easyopencv.OpenCvInternalCamera;
 
 import java.util.ArrayList;
 
-@Autonomous(name = "Auto", group = "final")
+@Autonomous(name = "AprilTagAutoExample", group = "final")
 
-public class Auto extends LinearOpMode {
+public class AprilTagAutoExample extends LinearOpMode {
     OpenCvCamera camera;
     AprilTagDetectionPipeline aprilTagDetectionPipeline;
     hwMap robot = new hwMap();
