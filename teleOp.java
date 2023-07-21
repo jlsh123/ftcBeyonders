@@ -6,8 +6,6 @@ import com.qualcomm.robotcore.util.Range;
 
 
 
-
-
 @TeleOp(name = "teleOp", group = "final")
 public class teleOp extends LinearOpMode {
 
