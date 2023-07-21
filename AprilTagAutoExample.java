@@ -1,4 +1,4 @@
-//this code is an example for using the back camera on a phone to detect an april tag in auto mode
+//this code is an example for using the back camera on a phone to detect an april tag in auto mode (note: it needs a hwMap to work)
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
