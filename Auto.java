@@ -1,4 +1,4 @@
-//this is an example code for auto mode (note: it needs a hwMap to work)
+//this is an example code for auto mode (note: it needs a hwMap to work) 
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
