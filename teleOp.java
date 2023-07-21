@@ -43,12 +43,14 @@ public class teleOp extends LinearOpMode {
                 RFSpeed = Range.clip((y_coor - x_coor - rotate),-1.0,1.0);
                 RBSpeed = Range.clip((y_coor + x_coor - rotate),-1.0,1.0);
             }
+            //set motor power
             robot.LeftFMotor.setPower(LFSpeed);
             robot.LeftBMotor.setPower(LBSpeed);
             robot.RightFMotor.setPower(RFSpeed);
             robot.RightBMotor.setPower(RBSpeed);
 
 
+            //show data
             telemetry.addData("power (LF)",robot.LeftFMotor.getPower());
             telemetry.addData("power (RF)",robot.RightFMotor.getPower());
             telemetry.addData("power (RB)",robot.RightBMotor.getPower());
@@ -60,7 +62,8 @@ public class teleOp extends LinearOpMode {
             telemetry.addData("pos (LB)",robot.LeftBMotor.getCurrentPosition());
 
             telemetry.addData("Robot Status","updated");
-            telemetry.update();
+            
+            telemetry.update();//must need in order to update what is shown on the phone
         }
     }
 }
