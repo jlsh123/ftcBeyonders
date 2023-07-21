@@ -11,9 +11,9 @@ import org.openftc.easyopencv.OpenCvInternalCamera;
 
 import java.util.ArrayList;
 
-@Autonomous(name = "Auto_L", group = "final")
+@Autonomous(name = "Auto", group = "final")
 
-public class Auto_L extends LinearOpMode {
+public class Auto extends LinearOpMode {
     OpenCvCamera camera;
     AprilTagDetectionPipeline aprilTagDetectionPipeline;
     hwMap robot = new hwMap();
@@ -24,7 +24,9 @@ public class Auto_L extends LinearOpMode {
     double fy = 578.272;//useless variable for us
     double cx = 402.145;//useless variable for us
     double cy = 221.506;//useless variable for us
-    int location = 0;//aprilTagInfo
+    
+    int location = 0;//aprilTagInfo (the goal of the detection)
+    
     double tagsize = 0.166;
 
     AprilTagDetection tagOfInterest = null;
@@ -78,9 +80,9 @@ public class Auto_L extends LinearOpMode {
             telemetry.addLine("nothing detected after 5 seconds :(");
         }
         telemetry.update();
-        //auto code here
+        //auto code here (use the location variable here)
 
-        
+
 
     }
 
